@@ -5,7 +5,7 @@
 This repository shows how to implement the Renormalized Mutual Information described in the paper "Renormalized Mutual Information for Artificial Scientific Discovery" by Leopoldo Sarra, Andrea Aiello and Florian Marquardt.
 
 ## Introduction
-Renormalized Mutual Information is a quantity that allows to quantify the dependence between a given random variable and a deterministic function of it. This can be used to extract a low-dimensional feature of a high-dimensional system by maximizing the regularized mutual information that the feature has with the system.
+Renormalized Mutual Information is a quantity that allows to quantify the dependence between a given random variable and a deterministic function of it. This can be used to extract a low-dimensional feature of a high-dimensional system by maximizing the renormalized mutual information that the feature has with the system.
 
 ![Sketch](figures/sketch.jpg)
 
