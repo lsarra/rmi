@@ -9,7 +9,7 @@ Renormalized Mutual Information is a quantity that allows to quantify the depend
 
 ![Sketch](figures/sketch.jpg)
 
-Usual Mutual Information can't be used in this contex, because it would always diverge for any choice of the feature. This is due to the deterministic dependence of the feature with the high dimensional variable. The mere addition of noise to mutual information to regularize the divergence is not enough to solve the problem: there is no guarantee that the optimal feature is not affected by the noise.
+Usual Mutual Information can't be used in this context, because it would always diverge for any choice of the feature. This is due to the deterministic dependence of the feature with the high dimensional variable. The mere addition of noise to mutual information to regularize the divergence is not enough to solve the problem: there is no guarantee that the optimal feature is not affected by the noise.
 
 That's the reason why Renormalized Mutual Information should be used in the context of deterministic and continuous functions of random variables. Please refer to the [paper](https://arxiv.org/abs/2005.01912) for more information.
 
@@ -17,11 +17,12 @@ Here, we show how to implement the estimation and optimization of Renormalized M
 
 ## Estimating Mutual Information
 
-The class in [renormalizedmutualinformation.py](renormalizedmutualinformation.py) can be directly used to estimate renormalized mutual information. 
+The class in [renormalizedmutualinformation.py](renormalizedmutualinformation.py) can be directly used to estimate renormalized mutual information, for features that you provide (i.e. expressions f(x) of the high-dimensional variables x). 
 Please refer to the notebook [FeatureComparisonExample.ipynb](FeatureComparisonExample.ipynb) for some comments and usage examples.
 
 ## Feature Extraction
-Please refer to the notebook [FeatureExtractorExample.ipynb](FeatureExtractorExample.ipynb) for an example. 
+
+Feature extraction is about automatically finding the optimal feature for a given distribution of high-dimensional data x. Please refer to the notebook [FeatureExtractorExample.ipynb](FeatureExtractorExample.ipynb) for an example. 
 
 
 # Citation
