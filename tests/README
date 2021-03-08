@@ -1,0 +1,10 @@
+Run tests with
+```
+python -m unittest *.py
+```
+
+Check notebooks with
+```
+py.test --nbval-lax *.ipynb
+``` 
+(required package `nbval`)
